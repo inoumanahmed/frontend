@@ -1,0 +1,20 @@
+# Ignore history and SSH files
+.bash_history
+.ssh/
+
+# Ignore log files
+*.log
+
+# Ignore temporary or system files
+*.tmp
+*.swp
+*~
+
+# Ignore compressed files
+*.zip
+
+# Ignore node_modules or dependencies
+node_modules/
+
+# Ignore other unnecessary files
+.DS_Store
