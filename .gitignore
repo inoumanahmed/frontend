@@ -1,7 +1,7 @@
 # Ignore history and SSH files
 .bash_history
 .ssh/
-
+.gitconfig
 # Ignore log files
 *.log
 
