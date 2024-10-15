@@ -5,7 +5,9 @@ services:
   - docker
 
 before_install:
+  - echo "Building Docker image..."
   - docker build -t noumanah/frontend -f Dockerfile.dev .
 
 script:
+  - echo "Running tests in Docker container..."
   - docker run -e CI=true noumanah/frontend npm run test
