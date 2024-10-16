@@ -11,14 +11,14 @@ before_install:
 script:
   - echo "Running tests in Docker container..."
   - docker run -e CI=true noumanah/frontend npm run test
-deploy:
-  provider: elasticbeanstalk
-  region: "ap-southeast-1"
-  app: "frontend"
-  env: "Frontend-env"
-  bucket_name: "melasticbeanstalk"
-  bucket_path: "s3://melasticbeanstalk"
-  on:
-    branch: main
-  access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_SECRET_KEY"
+#deploy:
+ # provider: elasticbeanstalk
+ # region: "ap-southeast-1"
+#  app: "frontend"
+ # env: "Frontend-env"
+ # bucket_name: "melasticbeanstalk"
+ # bucket_path: "s3://melasticbeanstalk"
+ # on:
+ #   branch: main
+ # access_key_id: "$AWS_ACCESS_KEY"
+ # secret_access_key: "$AWS_SECRET_KEY"
